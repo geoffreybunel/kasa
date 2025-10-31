@@ -1,11 +1,9 @@
-import ImageHome from '../assets/Image-home.png'
-import ImageAbout from '../assets/Image-about.png'
 import './Hero.scss'
 
-function Hero() {
+function Hero({className, text}) {
     return (
-        <div className='Hero__Home'>
-            {/* <img src={picture == "Home" ? ImageHome : ImageAbout} alt="Homepage image" /> */}
+        <div className={className == "Hero__Home" ? "Hero__Home" : "Hero__About" }>
+            <span>{text}</span>
         </div>
     )
 }

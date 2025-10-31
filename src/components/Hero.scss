@@ -1,11 +1,41 @@
 @import '../styles/mixins.scss';
+@import '../styles/variables.scss';
 
 .Hero__Home {
     @include hero;
+    position: relative;
     background-image: url("../assets/Image-home.png");
+
+    &::before {
+        content: "";
+        position: absolute;
+        border-radius: 25px;
+        inset: 0; // équivaut à top:0; right:0; bottom:0; left:0;
+        background: rgba(0, 0, 0, 0.6); // noir avec 40% d’opacité
+        z-index: 1; // overlay placé au-dessus de l’image
+      }
+
+    span {
+        position: relative;
+        z-index: 2;
+        font-size: 48px;
+        font-weight: 700;
+        color: $white;
+        text-shadow: 0px 4px 4px #00000040;
+    }
 }
 
 .Hero__About {
     @include hero;
+    position: relative;
     background-image: url("../assets/Image-about.png");
+
+    &::before {
+        content: "";
+        position: absolute;
+        border-radius: 25px;
+        inset: 0; // équivaut à top:0; right:0; bottom:0; left:0;
+        background: rgba(0, 0, 0, 0.4); // noir avec 40% d’opacité
+        z-index: 1; // overlay placé au-dessus de l’image
+      }
 }

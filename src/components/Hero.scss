@@ -1,0 +1,11 @@
+@import '../styles/mixins.scss';
+
+.Hero__Home {
+    @include hero;
+    background-image: url("../assets/Image-home.png");
+}
+
+.Hero__About {
+    @include hero;
+    background-image: url("../assets/Image-about.png");
+}

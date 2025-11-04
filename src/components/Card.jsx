@@ -1,6 +1,6 @@
-import './HousingCard.scss'
+import './Card.scss'
 
-function HousingCard({cover, title}) {
+function Card({cover, title}) {
     return (
         <div className='card'>
             <img src={cover} alt={title} />
@@ -8,4 +8,4 @@ function HousingCard({cover, title}) {
         </div>
     )
 }
-export default HousingCard
+export default Card

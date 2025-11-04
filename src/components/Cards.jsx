@@ -1,12 +1,12 @@
-import HousingCard from './HousingCard'
+import Card from './Card'
 import data from '../data/data.json'
-import './HousingGallery.scss'
+import './Cards.scss'
 
-function HousingGallery() {
+function Cards() {
     return (
-        <div className="gallery">
+        <div className="cards">
             {data.map((housing, index) => (
-                <HousingCard 
+                <Card 
                     key={`${housing.title}-${index}`}
                     cover={housing.cover}
                     title={housing.title}
@@ -15,4 +15,4 @@ function HousingGallery() {
         </div>
     )
 }
-export default HousingGallery
+export default Cards

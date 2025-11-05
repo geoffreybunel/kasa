@@ -7,6 +7,10 @@
     border-radius: 25px;
     box-shadow: 0px 4px 4px 0px #00000040;
     background-position: center;
+
+    @include media-max("phone") {
+      justify-content: flex-start;
+  }
 }
 
 $breakpoints: (

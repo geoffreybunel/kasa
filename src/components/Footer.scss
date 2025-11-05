@@ -15,20 +15,20 @@
     gap: 50px;
     background-color: $black;
 
-    @include media-min("phone") {
+    @include media-max("phone") {
         gap: 20px;
     }
 
     img {
         margin-top: 50px;
 
-        @include media-min("phone") {
+        @include media-max("phone") {
             margin-top: 0px;
         }
     }
     span {
         color: $white;
-        @include media-min("phone") {
+        @include media-max("phone") {
             width: 150px;
             text-align: center;
         }

@@ -8,3 +8,16 @@
     box-shadow: 0px 4px 4px 0px #00000040;
     background-position: center;
 }
+
+$breakpoints: (
+  "phone": 768px,
+  "tablet": 1024px,
+  "desktop": 1240px
+);
+
+
+@mixin media-min($_key) {
+    @media screen and (max-width: map-get($breakpoints, $_key)) {
+      &{ @content; }
+    }
+  }

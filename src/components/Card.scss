@@ -1,4 +1,5 @@
 @import '../styles/variables.scss';
+@import '../styles/mixins.scss';
 
 .card {
     position: relative;
@@ -9,11 +10,27 @@
     border-radius: 10px;
     overflow: hidden; // pour que l’overlay ne dépasse pas les bords
 
+    @include media-max("desktop") {
+       width: 100%;
+    }
+
+    @include media-max("phone") {
+        height: 255px;
+    }
+
     img {
         width: 340px;
         height: 340px;
         // border-radius: 10px;
         object-fit: cover;
+
+        @include media-max("desktop") {
+            width: 100%;
+        }
+
+        @include media-max("phone") {
+            height: 255px;
+        }
     }
 
     h3 {

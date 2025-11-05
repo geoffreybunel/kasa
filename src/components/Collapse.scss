@@ -1,0 +1,47 @@
+@import '../styles/variables.scss';
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 20px 10px 15px;
+    margin-top: 40px;
+    background-color: $red;
+
+    h3 {
+        margin: 0;
+        color: $white;
+        font-size: 24px;
+    }
+
+    img {
+        width: 32px;
+        height: 32px;
+        transition: transform 0.3s ease;
+
+        &.rotated {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.options {
+    overflow: hidden;
+    max-height: 0;
+    // opacity: 0;
+    background-color: $gallerybg;
+    border-radius: 0px 0px 5px 5px;
+    padding: 0 20px;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+
+    p {
+        margin: 0;
+    }
+}
+
+.options.visible {
+    max-height: 500px;
+    // opacity: 1;
+    padding: 20px;
+}

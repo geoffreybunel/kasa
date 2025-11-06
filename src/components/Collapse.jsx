@@ -12,7 +12,7 @@ function Collapse({title, description}) {
     //     setDropdown(false);
     // }
     return (
-        <div>
+        <div className='collapse'>
             <div className='dropdown'>
                 <h3>{title}</h3>
                 <img 

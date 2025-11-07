@@ -1,3 +1,28 @@
-.housing__container {
-    width: 100%;
+.housingInfos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    &__tags {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    &__rating {
+        margin-top: 20px;
+    }
+}
+
+.housingDropdowns {
+    display: flex;
+    gap: 76px;
+
+    &__container {
+        width: 50%;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
 }

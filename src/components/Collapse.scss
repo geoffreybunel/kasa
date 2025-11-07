@@ -35,7 +35,7 @@
         transition: transform 0.3s ease;
 
         &.rotated {
-            transform: rotate(180deg);
+            transform: rotate(-180deg);
         }
 
         @include media-max("phone") {
@@ -51,7 +51,6 @@
     // opacity: 0;
     background-color: $gallerybg;
     border-radius: 0px 0px 5px 5px;
-    padding: 0 20px;
     transition: max-height 0.4s ease, opacity 0.4s ease;
 
     @include media-max("desktop") {
@@ -60,9 +59,19 @@
 
     p {
         margin: 0;
+        padding: 20px;
 
         @include media-max("phone") {
             font-size: 12px;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 20px;
+
+        li {
+            list-style: none;
         }
     }
 }
@@ -70,5 +79,4 @@
 .options.visible {
     max-height: 500px;
     // opacity: 1;
-    padding: 20px;
 }

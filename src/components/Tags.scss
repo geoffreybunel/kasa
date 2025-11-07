@@ -1,0 +1,11 @@
+@import '../styles/variables.scss';
+
+.tag {
+    background-color: $red;
+    color: $white;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 4.5px 30px;
+    max-height: 25px;
+}

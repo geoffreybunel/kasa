@@ -1,0 +1,22 @@
+@import '../styles/variables.scss';
+
+.hostContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+
+    span {
+        font-size: 18px;
+        text-align: right;
+        color: $red;
+        white-space: normal;
+        word-break: break-word;
+    }
+
+    img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50px;
+    }
+}

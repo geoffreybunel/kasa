@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import './Housing.scss'
 import data from '../data/data.json'
+import Slideshow from '../components/Slideshow';
 
 function Housing() {
     const { id } = useParams();
@@ -11,8 +12,8 @@ function Housing() {
     }
 
     return (
-        <div>
-            
+        <div className='housing__container'>
+            <Slideshow pictures={housing.pictures} />
         </div>
     )
 }

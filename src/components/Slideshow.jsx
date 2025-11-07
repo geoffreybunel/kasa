@@ -26,10 +26,16 @@ function Slideshow({pictures}) {
     return (
         <div className="slideshow">
             <img src={pictures[index]} alt="Housing cover" className='slideshow__pictures' />
-            <div className='slideshow__arrows'>
-                <img onClick={prevSlide} src={leftArrow} alt="back arrow" className='slideshow__arrows--left' />
-                <img onClick={nextSlide} src={rightArrow} alt="back arrow" className='slideshow__arrows--right' />
-            </div>
+
+            {arrayLength > 1 && (
+              <div className='slideshow__arrows'>
+                  <img onClick={prevSlide} src={leftArrow} alt="back arrow" className='slideshow__arrows--left' />
+                  <img onClick={nextSlide} src={rightArrow} alt="back arrow" className='slideshow__arrows--right' />
+              </div>
+            )}
+            {arrayLength > 1 && (
+              <span>{index + 1}/{arrayLength}</span>
+            )}
         </div>
     )
 }

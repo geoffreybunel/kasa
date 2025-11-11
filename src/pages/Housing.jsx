@@ -7,10 +7,17 @@ import Tags from '../components/Tags';
 import Host from '../components/Host';
 import Rating from '../components/Rating';
 import Collapse from '../components/Collapse';
+import Error from '../pages/Error'
 
 function Housing() {
     const { id } = useParams();
     const housing = data.find(item => item.id === id);
+
+    if (!housing) {
+        return (
+            <Error />
+        )
+    }
 
     const color = {
         grey: "#E3E3E3",
@@ -19,7 +26,7 @@ function Housing() {
     const stars = Array(5).fill(0)
 
     return (
-        <div>
+        <>
             <Slideshow pictures={housing.pictures} />
             <div className='housingInfos'>
                 <div>
@@ -53,7 +60,7 @@ function Housing() {
                     <Collapse title="Équipements" description={housing.equipments} />
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 export default Housing

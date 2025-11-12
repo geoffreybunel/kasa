@@ -41,10 +41,10 @@
             &:hover {
                 text-decoration: underline;
             }
+        }
 
-            &:focus {
-                text-decoration: underline; 
-            }
+        .active {
+            text-decoration: underline;
         }
     }
 }

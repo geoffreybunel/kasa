@@ -37,7 +37,7 @@ function Housing() {
                         ))}
                     </div>
                 </div>
-                <div>
+                <div className='housingInfos__Host__Rating'>
                     <div>
                         <Host name={housing.host.name} picture={housing.host.picture} />
                     </div>
@@ -54,10 +54,10 @@ function Housing() {
             </div>
             <div className='housingDropdowns'>
                 <div className='housingDropdowns__container'>
-                    <Collapse title="Description" description={housing.description} />
+                    <Collapse title="Description" description={housing.description} className='housingDropdowns__container--1' />
                 </div>
                 <div className='housingDropdowns__container'>
-                    <Collapse title="Équipements" description={housing.equipments} />
+                    <Collapse title="Équipements" description={housing.equipments} className='housingDropdowns__container--2' />
                 </div>
             </div>
         </>

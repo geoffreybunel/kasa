@@ -1,2 +1,8 @@
-@import '../styles/variables.scss';
+@import '../styles/mixins.scss';
 
+.star {
+    @include media-max("phone") {
+        width: 19px;
+        height: 19px;
+    }  
+}

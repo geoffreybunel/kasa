@@ -6,7 +6,7 @@ function Collapse({title, description}) {
     const [dropdownToggled, setdropdownToggled] = useState(false);
 
     return (
-        <div>
+        <>
             <div className='dropdown'>
                 <h3>{title}</h3>
                 <img 
@@ -27,7 +27,7 @@ function Collapse({title, description}) {
                     <p>{description}</p>
                 )}
             </div>
-        </div>
+        </>
     )
 }
 

@@ -1,8 +1,7 @@
 @import '../styles/variables.scss';
 @import '../styles/mixins.scss';
 
-.housingTitleContainer {
-    &__title {
+.housingTitle {
         margin: 0;
         font-size: 36px;
         font-weight: 500;
@@ -11,13 +10,12 @@
         @include media-max("phone") {
             font-size: 18px;
         } 
-    }
+}
 
-    &__location {
-        font-size: 18px;
+.housingLocation {
+    font-size: 18px;
 
-        @include media-max("phone") {
-            font-size: 14px;
-        } 
-    }
+    @include media-max("phone") {
+        font-size: 14px;
+    } 
 }

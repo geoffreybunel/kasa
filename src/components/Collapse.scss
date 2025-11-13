@@ -48,7 +48,6 @@
 .options {
     overflow: hidden;
     max-height: 0;
-    // opacity: 0;
     background-color: $gallerybg;
     border-radius: 0px 0px 5px 5px;
     transition: max-height 0.4s ease, opacity 0.4s ease;
@@ -82,5 +81,4 @@
 
 .options.visible {
     max-height: 500px;
-    // opacity: 1;
 }

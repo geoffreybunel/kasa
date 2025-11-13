@@ -3,7 +3,7 @@ import propTypes from 'prop-types';
 
 function Tags({tags}) {
     return (
-            <span className='tag'>{tags}</span>
+        <span className='tag'>{tags}</span>
     )
 }
 

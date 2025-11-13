@@ -3,10 +3,10 @@ import propTypes from 'prop-types'
 
 function HousingTitle({title, location}) {
     return (
-        <div className='housingTitleContainer'>
-            <h1 className='housingTitleContainer__title'>{title}</h1>
-            <span className='housingTitleContainer__location'>{location}</span>
-        </div>
+        <>
+            <h1 className='housingTitle'>{title}</h1>
+            <span className='housingLocation'>{location}</span>
+        </>
     )
 }
 

@@ -3,7 +3,7 @@ import propTypes from 'prop-types'
 
 function Host({name, picture}) {
     return (
-        <div className='hostContainer'>
+        <div className='host'>
             <span>
                 {name.split(' ')[0]}<br />
                 {name.split(' ')[1]}

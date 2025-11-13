@@ -2,8 +2,8 @@
 @import '../styles/mixins.scss';
 
 .footer {
-    position: relative; /* Permet de positionner le footer */
-    width: 100vw; /* 100% de la largeur de la fenêtre */
+    position: relative;
+    width: 100vw;
     left: 50%; /* Décale le footer au centre */
     transform: translateX(-50%); /* Recentre le footer */
     margin-top: 40px;

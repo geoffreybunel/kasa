@@ -8,7 +8,7 @@ function Header() {
             <Link to="/">
                 <img src={KasaLogo} alt="Logo Kasa" />
             </Link>
-            <div className="nav">
+            <div className="header__nav">
                 <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>Accueil</NavLink>
                 <NavLink to="/about" className={({ isActive }) => (isActive ? "active" : "")}>À propos</NavLink>
             </div>

@@ -1,4 +1,5 @@
 import './Card.scss'
+import propTypes from 'prop-types'
 
 function Card({cover, title}) {
     return (
@@ -8,4 +9,10 @@ function Card({cover, title}) {
         </div>
     )
 }
+
+Card.propTypes = {
+    cover: propTypes.string.isRequired,
+    title: propTypes.string.isRequired,
+}
+
 export default Card

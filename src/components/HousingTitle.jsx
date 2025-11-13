@@ -1,4 +1,5 @@
 import './HousingTitle.scss'
+import propTypes from 'prop-types'
 
 function HousingTitle({title, location}) {
     return (
@@ -8,4 +9,10 @@ function HousingTitle({title, location}) {
         </div>
     )
 }
+
+HousingTitle.propTypes = {
+    title: propTypes.string.isRequired,
+    location: propTypes.string.isRequired,
+}
+
 export default HousingTitle

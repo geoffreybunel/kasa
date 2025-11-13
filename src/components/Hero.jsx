@@ -1,4 +1,5 @@
 import './Hero.scss'
+import propTypes from 'prop-types'
 
 function Hero({className, text}) {
     return (
@@ -7,4 +8,10 @@ function Hero({className, text}) {
         </div>
     )
 }
+
+Hero.propTypes = {
+    className: propTypes.string,
+    text: propTypes.string,
+}
+
 export default Hero

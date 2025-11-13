@@ -1,5 +1,6 @@
 import './Collapse.scss'
 import { useState } from 'react';
+import propTypes from 'prop-types'
 
 function Collapse({title, description}) {
     const [dropdownToggled, setdropdownToggled] = useState(false);
@@ -29,4 +30,10 @@ function Collapse({title, description}) {
         </div>
     )
 }
+
+Collapse.propTypes = {
+    title: propTypes.string.isRequired,
+    description: propTypes.string.isRequired,
+}
+
 export default Collapse

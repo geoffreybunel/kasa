@@ -1,4 +1,5 @@
 import './Host.scss';
+import propTypes from 'prop-types'
 
 function Host({name, picture}) {
     return (
@@ -11,4 +12,10 @@ function Host({name, picture}) {
         </div>
     )
 }
+
+Host.propTypes = {
+    name: propTypes.string.isRequired,
+    picture: propTypes.string.isRequired,
+}
+
 export default Host

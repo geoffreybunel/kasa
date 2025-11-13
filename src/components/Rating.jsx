@@ -1,4 +1,5 @@
 import './Rating.scss';
+import propTypes from 'prop-types';
 
 function Rating({color}) {
     return (
@@ -7,4 +8,9 @@ function Rating({color}) {
         </svg>
     )
 }
+
+Rating.propTypes = {
+    color: propTypes.string
+}
+
 export default Rating

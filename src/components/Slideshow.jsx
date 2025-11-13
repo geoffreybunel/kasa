@@ -2,6 +2,7 @@ import './Slideshow.scss';
 import { useState } from 'react';
 import leftArrow from '../assets/left-arrow.png';
 import rightArrow from '../assets/right-arrow.png';
+import propTypes from 'prop-types';
 
 function Slideshow({pictures}) {
     const [index, setIndex] = useState(0);
@@ -39,4 +40,9 @@ function Slideshow({pictures}) {
         </div>
     )
 }
+
+Slideshow.propTypes = {
+    pictures: propTypes.string
+}
+
 export default Slideshow

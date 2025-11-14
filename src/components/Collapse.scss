@@ -1,5 +1,5 @@
-@import '../styles/variables.scss';
-@import '../styles/mixins.scss';
+@use '../styles/variables.scss' as v;
+@use '../styles/mixins.scss' as mx;
 
 .dropdown {
     display: flex;
@@ -8,22 +8,22 @@
     border-radius: 5px;
     padding: 10px 20px 10px 15px;
     margin-top: 40px;
-    background-color: $red;
+    background-color: v.$red;
 
-    @include media-max("desktop") {
+    @include mx.media-max("desktop") {
         margin: 30px 20px 0;
     }
 
     h3 {
         margin: 0;
-        color: $white;
+        color: v.$white;
         font-size: 24px;
 
-        @include media-max("tablet") {
+        @include mx.media-max("tablet") {
             font-size: 18px;
         }
 
-        @include media-max("phone") {
+        @include mx.media-max("phone") {
             font-size: 13px;
         }
         
@@ -38,7 +38,7 @@
             transform: rotate(-180deg);
         }
 
-        @include media-max("phone") {
+        @include mx.media-max("phone") {
             width: 20px;
             height: 20px;
         }
@@ -48,11 +48,11 @@
 .options {
     overflow: hidden;
     max-height: 0;
-    background-color: $gallerybg;
+    background-color: v.$gallerybg;
     border-radius: 0px 0px 5px 5px;
     transition: max-height 0.4s ease, opacity 0.4s ease;
 
-    @include media-max("desktop") {
+    @include mx.media-max("desktop") {
         margin: 0 20px;
     }
 
@@ -60,7 +60,7 @@
         margin: 0;
         padding: 20px;
 
-        @include media-max("phone") {
+        @include mx.media-max("phone") {
             font-size: 12px;
         }
     }
@@ -72,7 +72,7 @@
         li {
             list-style: none;
 
-            @include media-max("phone") {
+            @include mx.media-max("phone") {
                 font-size: 12px;
             }
         }

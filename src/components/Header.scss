@@ -1,5 +1,5 @@
-@import '../styles/variables.scss';
-@import '../styles/mixins.scss';
+@use '../styles/variables.scss' as v;
+@use '../styles/mixins.scss' as mx;
 
 .header {
     display: flex;
@@ -8,11 +8,11 @@
     max-height: 68px;
     margin: 40px 0;
 
-    @include media-max("desktop") {
+    @include mx.media-max("desktop") {
         margin: 40px 20px;
     }
 
-    @include media-max("phone") {
+    @include mx.media-max("phone") {
         max-height: 48px;
         margin: 20px;
 
@@ -28,14 +28,14 @@
         font-weight: 500;
         line-height: 143%;
 
-        @media screen and (max-width: 768px) {
+        @include mx.media-max("phone") {
             font-size: 12px;
             text-transform: uppercase;
             gap: 30px;
         }
 
         a {
-        color: $black;
+        color: v.$black;
         text-decoration: none;
 
             &:hover {

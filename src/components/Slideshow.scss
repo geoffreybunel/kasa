@@ -1,5 +1,5 @@
-@import '../styles/variables.scss';
-@import '../styles/mixins.scss';
+@use '../styles/variables.scss' as v;
+@use '../styles/mixins.scss' as mx;
 
 .slideshow {
     position: relative;
@@ -7,7 +7,7 @@
     align-items: center;
     z-index: 0;
 
-    @include media-max("desktop") {
+    @include mx.media-max("desktop") {
         margin: 0 20px;
     }
 
@@ -17,7 +17,7 @@
         border-radius: 25px;
         object-fit: cover;
 
-        @include media-max("phone") {
+        @include mx.media-max("phone") {
             height: 255px;
         }        
     }
@@ -31,7 +31,7 @@
         &--left {
             margin-left: 20px;
 
-            @include media-max("phone") {
+            @include mx.media-max("phone") {
                 width: 12px;
             }     
         }
@@ -39,7 +39,7 @@
         &--right {
             margin-right: 20px;
 
-            @include media-max("phone") {
+            @include mx.media-max("phone") {
                 width: 12px;
             }     
         }
@@ -51,9 +51,9 @@
         display: flex;
         justify-content: center;
         bottom: 20px;
-        color: $white;
+        color: v.$white;
 
-        @include media-max("phone") {
+        @include mx.media-max("phone") {
             display: none;
         }     
     }

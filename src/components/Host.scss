@@ -1,5 +1,5 @@
-@import '../styles/variables.scss';
-@import '../styles/mixins.scss';
+@use '../styles/variables.scss' as v;
+@use '../styles/mixins.scss' as mx;
 
 .host {
     display: flex;
@@ -10,11 +10,11 @@
     span {
         font-size: 18px;
         text-align: right;
-        color: $red;
+        color: v.$red;
         white-space: normal;
         word-break: break-word;
 
-        @include media-max("phone") {
+        @include mx.media-max("phone") {
             font-size: 12px;
         }  
     }
@@ -24,7 +24,7 @@
         height: 64px;
         border-radius: 50px;
 
-        @include media-max("phone") {
+        @include mx.media-max("phone") {
             width: 32px;
             height: 32px;
         }  

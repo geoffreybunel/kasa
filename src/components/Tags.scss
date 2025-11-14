@@ -1,16 +1,16 @@
-@import '../styles/variables.scss';
-@import '../styles/mixins.scss';
+@use '../styles/variables.scss' as v;
+@use '../styles/mixins.scss' as mx;
 
 .tag {
-    background-color: $red;
-    color: $white;
+    background-color: v.$red;
+    color: v.$white;
     font-size: 14px;
     font-weight: 700;
     border-radius: 10px;
     padding: 4.5px 30px;
     max-height: 25px;
 
-    @include media-max("phone") {
+    @include mx.media-max("phone") {
         font-size: 10px;
         padding: 4.5px 15px;
     } 

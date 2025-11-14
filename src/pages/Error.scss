@@ -1,5 +1,5 @@
-@import '../styles/variables.scss';
-@import '../styles/mixins.scss';
+@use '../styles/variables.scss' as v;
+@use '../styles/mixins.scss' as mx;
 
 .Error {
     display: flex;
@@ -10,15 +10,15 @@
     h1 {
         font-size: 288px;
         font-weight: 700;
-        color: $red;
+        color: v.$red;
         margin: 100px 0 0;
         line-height: normal;
 
-        @include media-max("tablet") {
+        @include mx.media-max("tablet") {
             font-size: 150px;
         }
 
-        @include media-max("phone") {
+        @include mx.media-max("phone") {
             font-size: 98px;
         }
     }
@@ -26,14 +26,14 @@
     h2 {
         font-size: 36px;
         font-weight: 500;
-        color: $red;
+        color: v.$red;
         text-align: center;
 
-        @include media-max("tablet") {
+        @include mx.media-max("tablet") {
             font-size: 24px;
         }
 
-        @include media-max("phone") {
+        @include mx.media-max("phone") {
             font-size: 18px;
             width: 260px;
         }
@@ -41,10 +41,10 @@
 
     a {
         font-size: 18px;
-        color: $black;
+        color: v.$black;
         margin-bottom: 100px;
 
-        @include media-max("phone") {
+        @include mx.media-max("phone") {
             font-size: 14px;
         }
     }

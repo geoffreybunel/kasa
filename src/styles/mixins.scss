@@ -1,3 +1,12 @@
+@use "sass:map";
+@use './breakpoints' as bp;
+
+@mixin media-max($_key) {
+  @media screen and (max-width: map.get(bp.$breakpoints, $_key)) {
+    @content;
+  }
+}
+
 @mixin hero {
     display: flex;
     justify-content: center;
@@ -8,20 +17,10 @@
     box-shadow: 0px 4px 4px 0px #00000040;
     background-position: center;
 
-    @include media-max("phone") {
-      justify-content: flex-start;
+  // Permet d'injecter du code dans le bloc hero
+  @content;
+
+  @include media-max("phone") {
+    justify-content: flex-start;
   }
 }
-
-$breakpoints: (
-  "phone": 768px,
-  "tablet": 1024px,
-  "desktop": 1240px
-);
-
-
-@mixin media-max($_key) {
-    @media screen and (max-width: map-get($breakpoints, $_key)) {
-      @content;
-    }
-  }

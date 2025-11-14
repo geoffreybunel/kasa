@@ -1,5 +1,5 @@
-@import '../styles/variables.scss';
-@import '../styles/mixins.scss';
+@use '../styles/variables.scss' as v;
+@use '../styles/mixins.scss' as mx;
 
 .card {
     position: relative;
@@ -10,11 +10,11 @@
     border-radius: 10px;
     overflow: hidden; // pour que l’overlay ne dépasse pas les bords
 
-    @include media-max("desktop") {
+    @include mx.media-max("desktop") {
        width: 100%;
     }
 
-    @include media-max("phone") {
+    @include mx.media-max("phone") {
         height: 255px;
     }
 
@@ -23,11 +23,11 @@
         height: 340px;
         object-fit: cover;
 
-        @include media-max("desktop") {
+        @include mx.media-max("desktop") {
             width: 100%;
         }
 
-        @include media-max("phone") {
+        @include mx.media-max("phone") {
             height: 255px;
         }
     }
@@ -39,7 +39,7 @@
         right: 20px;
         font-size: 18px;
         font-weight: 700;
-        color: $white;
+        color: v.$white;
         z-index: 2; // au-dessus de l’overlay
     }
 

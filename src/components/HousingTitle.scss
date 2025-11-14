@@ -1,13 +1,13 @@
-@import '../styles/variables.scss';
-@import '../styles/mixins.scss';
+@use '../styles/variables.scss' as v;
+@use '../styles/mixins.scss' as mx;
 
 .housingTitle {
         margin: 0;
         font-size: 36px;
         font-weight: 500;
-        color: $red;
+        color: v.$red;
 
-        @include media-max("phone") {
+        @include mx.media-max("phone") {
             font-size: 18px;
         } 
 }
@@ -15,7 +15,7 @@
 .housingLocation {
     font-size: 18px;
 
-    @include media-max("phone") {
+    @include mx.media-max("phone") {
         font-size: 14px;
     } 
 }

@@ -1,7 +1,7 @@
-@import '../styles/mixins.scss';
+@use '../styles/mixins.scss' as mx;
 
 .star {
-    @include media-max("phone") {
+    @include mx.media-max("phone") {
         width: 19px;
         height: 19px;
     }  

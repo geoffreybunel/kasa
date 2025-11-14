@@ -1,17 +1,17 @@
-@import '../styles/mixins.scss';
-@import '../styles/variables.scss';
+@use '../styles/mixins.scss' as mx;
+@use '../styles/variables.scss' as v;
 
 .Hero__Home {
-    @include hero;
+    @include mx.hero;
     position: relative;
     background-image: url("../assets/Image-home.png");
 
-    @include media-max("desktop") {
+    @include mx.media-max("desktop") {
         margin: 0 20px;
         width: auto;
     }
 
-    @include media-max("phone") {
+    @include mx.media-max("phone") {
         height: 111px;
     }
 
@@ -29,10 +29,10 @@
         z-index: 2;
         font-size: 48px;
         font-weight: 700;
-        color: $white;
+        color: v.$white;
         text-shadow: 0px 4px 4px #00000040;
 
-        @include media-max("phone") {
+        @include mx.media-max("phone") {
             font-size: 24px;
             text-wrap: wrap;
             margin: 0 20px;
@@ -41,16 +41,16 @@
 }
 
 .Hero__About {
-    @include hero;
+    @include mx.hero;
     position: relative;
     background-image: url("../assets/Image-about.png");
 
-    @include media-max("desktop") {
+    @include mx.media-max("desktop") {
         margin: 0 20px;
         width: auto;
     }
 
-    @include media-max("phone") {
+    @include mx.media-max("phone") {
         height: 111px;
         
     }

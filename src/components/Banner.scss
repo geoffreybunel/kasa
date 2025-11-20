@@ -1,8 +1,8 @@
 @use '../styles/mixins.scss' as mx;
 @use '../styles/variables.scss' as v;
 
-.Hero__Home {
-    @include mx.hero;
+.Banner__Home {
+    @include mx.banner;
     position: relative;
     background-image: url("../assets/Image-home.png");
 
@@ -40,8 +40,8 @@
     }
 }
 
-.Hero__About {
-    @include mx.hero;
+.Banner__About {
+    @include mx.banner;
     position: relative;
     background-image: url("../assets/Image-about.png");
 

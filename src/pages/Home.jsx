@@ -1,10 +1,10 @@
-import Hero from "../components/Hero"
+import Banner from "../components/Banner"
 import Cards from "../components/Cards"
 
 function Home() {
     return (
         <>
-            <Hero className = "Hero__Home" text="Chez vous, partout et ailleurs"/>
+            <Banner className = "Banner__Home" text="Chez vous, partout et ailleurs"/>
             <Cards />
         </>
     )

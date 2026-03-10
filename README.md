@@ -40,7 +40,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 Clone the repository:
 
-git clone https://github.com/yourusername/kasa.git
+git clone https://github.com/geoffreybunel/kasa.git
 
 Install dependencies:
 
